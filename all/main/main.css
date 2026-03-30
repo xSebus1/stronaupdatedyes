@@ -1,0 +1,720 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    font-family: "Inter", sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --czarny: #000000;
+    --szary: #4B4B4B;
+    --zolty: #EAC100;
+    --bialy: #FAFAFA;
+    --babyblue: #61DBFB;
+    --jasnozielony: #42B883;
+    --granat: #787CB5;
+    --czerwony: #BC0B15;
+    --jasnoszary: #D9D9D9;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.glowa{
+    display: flex;
+    background-color: var(--jasnoszary);
+    width: 80vw;
+    height: 15vh;
+    align-items: center;
+}
+
+.navi{
+    width: 80vw;
+    height: 5vh;
+    background-color: var(--szary);
+}
+
+.doublenavi{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    width: 45%;
+    height: 100%;
+    font-size: small;
+}
+
+.przycisk{
+    width: 20%;
+    height: 75%;
+    background-color: var(--jasnoszary);
+    align-content: center;
+}
+
+.przycisk > a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    font-family: "Inter", sans-serif;
+}
+
+#glowna{
+    background-color: var(--zolty);
+}
+
+.main{
+    width: 80vw;
+    height: 100vh;
+}
+
+.pobok{
+    width: 20vw;
+    height: 85vh;
+    background-color: var(--jasnoszary);
+}
+
+.tekstownik{
+    display: flex;
+    width: 100%;
+    height: 14vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.tekstcik{
+    display: flex;
+    width: 70%;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.tekstcik > p{
+    font-size: 30px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.hrsec{
+    width: 100%;
+    height: 5%;
+    justify-items: center;
+}
+
+hr{
+    display: flex;
+    align-content: center;
+    border-bottom: 2px solid var(--szary);
+    border-top: 2px solid var(--szary);
+    width: 85%;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+.stopa{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20vw;
+    height: 15vh;
+    background-color: var(--szary);
+}
+
+.aside{
+    width: 20vw;
+    height: 100vh;
+    background-color: orange;
+}
+
+.gorna{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 20vh;
+    background-color: white;
+    background-image: url(background.png);
+    justify-content: center;
+    align-items: center;
+}
+
+.ptekst{
+    display: flex;
+    justify-content: flex-end;
+    align-self: center;
+    font-size: xx-large;
+    margin-right: 50px;
+    margin-bottom: 0px;
+    font-size: 20px;
+}
+
+.tekst{
+    display: flex;
+    width: 50%;
+    height: 75%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+}
+
+.logo{
+    margin-left: 25px;
+}
+
+.github{
+    margin-top: 20px;
+    width: 75px;
+    height: 75px;
+}
+
+.autor{
+    color: white;
+    font-style: normal;
+}
+
+.kolorowe{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    justify-self: flex-end;
+    align-items: flex-end;
+    width: 85%;
+    height: 50vh;
+}
+
+.blok:hover{
+    width: 88%;
+    transform:translateX(-10px);
+    transition: 0.1s;
+    position: relative;
+    right: -10px;
+}
+
+.blok{
+    display: flex;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 80%;
+    height: 15%;
+}
+
+.blok > p{
+    color: var(--bialy);
+    text-decoration: 1px solid var(--bialy);
+}
+
+#niebieski{
+    background-color: var(--babyblue);
+    box-shadow: 0px 4px 0px rgb(3, 103, 112, 0.651);
+}
+
+.blokprawo{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+    height: 100%;
+    color: white;
+    align-items: center;
+}
+
+.bloklewo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    justify-items: center;
+    width: 50%;
+    height: 100%;
+    color: var(--bialy);
+}
+
+.tekstblok{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 100%;
+    justify-self: center;
+    justify-content: space-around;
+}
+
+.tekstblok > p{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+#react{
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+    text-shadow: -2px 0px aqua, 0px 2px aqua, 2px 0px aqua, 0px -2px aqua;
+}
+
+#vue{
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+    text-shadow: -2px 0px green, 0px 2px green, 2px 0px green, 0px -2px green;
+}
+
+#php{
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+    text-shadow: -2px 0px rgb(101, 48, 151), 0px 2px rgb(101, 48, 151), 2px 0px rgb(101, 48, 151), 0px -2px rgb(101, 48, 151);
+}
+
+#java{
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+    text-shadow: -2px 0px rgb(156, 22, 22), 0px 2px rgb(156, 22, 22), 2px 0px rgb(156, 22, 22), 0px -2px rgb(156, 22, 22);
+}
+
+.niebieskiprawo > p{
+    width: 60px;
+    height: 60px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.niebieskilewo > p{
+    width: auto;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    font-size: small;
+}
+
+#zielony{
+    background-color: var(--jasnozielony);
+    box-shadow: 0px 4px 0px rgba(3, 112, 21, 0.651); 
+}
+
+#fioletowy{
+    background-color: var(--granat);
+    box-shadow: 0px 4px 0px rgba(34, 3, 83, 0.651);
+}
+
+#czerwony{
+    background-color: var(--czerwony);
+    box-shadow: 0px 4px 0px rgba(129, 7, 7, 0.651);
+}
+
+.partnerzydisplay{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 40%;
+}
+
+.bloczek{
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    width: 15%;
+    height: calc(30% + 100px);
+}
+
+.obrazosekcjo{
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    padding: 0px;
+    margin-bottom: 50px;
+}
+
+.kalkulatorek{
+    justify-self: center;
+    width: 70%;
+    height: calc(60% / 10 * 7.5);
+    background-color: var(--jasnoszary);
+}
+
+.kaltekst{
+    font-size: xx-large;
+    width: 27.5%;
+    height: 15%;
+}
+
+.kaltekst > h3{
+    margin-left: 25px;
+    padding-top: 25px;
+}
+
+.kal2{
+    display: flex;
+    padding-top: 30px;
+    width: 100%;
+    height: 85%;
+    background-color: var(--jasnoszary)
+}
+
+.kursy{
+    margin-left: 20px;
+    width: 30%;
+    height: 50%;
+    color: var(--szary);
+}
+
+.kursy > p{
+    margin-left: 10px;
+    font-size: x-large;
+}
+
+.kursyleft{
+    background-color: var(--szary);
+    width: 100%;
+    height: 90%;
+    border-radius: 5px;
+}
+
+.checkboxik{
+    display: flex;
+    margin-left: 10px;
+    padding-top: 25px;
+    justify-content: space-between;
+    width: 150px;
+}
+
+.checkboxik > p{
+    width: 80px;
+    color: var(--bialy);
+    font-size: x-large;
+}
+
+.miasto{
+    margin-left: 20px;
+    width: 30%;
+    height: 10%;
+    color: var(--szary);
+}
+
+.miasto > p{
+    width: 100%;
+    margin-left: 10px;
+    font-size: x-large;
+}
+
+form {
+    width: 80%;
+    height: 60%;
+    margin: 0px;
+    padding: 0px;
+}
+
+select {
+    border: none;
+    outline: none;
+    background-color: var(--szary);
+    color: var(--bialy);
+    width: 100%;
+    height: 100%;
+    font-size: x-large;
+    padding-left: 10px;
+}
+
+.ratyliczenie{
+    margin-left: 20px;
+    width: 32.5%;
+    height: 75%;
+    color: var(--szary);
+}
+
+.ratyliczenie > p{
+    width: 100%;
+    margin-left: 10px;
+    font-size: x-large;
+}
+
+.ratyliczenie > input{
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    height: 8.5%;
+    padding-bottom: 10px;
+}
+
+.ratydisplay{
+    margin-top: 20px;
+    width: 100%;
+    height: 81%;
+}
+
+.gora{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 30%;
+    background-color: var(--szary);
+}
+
+.srodekdisplay{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 30%;
+    background-color: var(--szary);
+}
+
+.lewo{
+    width: 50%;
+    height: 100%;
+}
+
+.lewo > p{
+    padding-top: 15px;
+    padding-left: 15px;
+    color: var(--bialy);
+    font-size: larger;
+}
+
+.prawo > p{
+    padding-top: 15px;
+    padding-left: 15px;
+    color: var(--bialy);
+    font-size: larger;
+}
+
+.prawo{
+    width: 50%;
+    height: 100%;
+}
+
+.dl{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    width: 60%;
+    height: 100%;
+    background-color: var(--szary);
+    color: var(--jasnoszary);
+    font-size: larger;
+}
+
+.dp{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+    background-color: var(--szary);
+    color: var(--bialy);
+    font-size: larger;
+}
+
+.guziczek{
+    display: flex;
+    justify-self: flex-end;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    width: 35%;
+    height: 20%;
+    border: none;
+    background-color: var(--zolty);
+    font-size: x-large;
+}
+
+.guziczek > img{
+    width: 25%;
+    height: 50%;
+    border: none;
+}
+
+/* formularz */
+
+.srodekdisplay{
+    height: 57%;
+    width: 100%;
+    background-color: #FFFF;
+    display: flex;
+    flex-direction: row;
+}
+
+.tabeleczka{
+    width: 50%;
+    height: 100%;
+}
+
+.formularzek{
+    width: 50%;
+    height: 100%;
+}
+
+.baton{
+    display: flex;
+    width: 200px;
+    height: 50px;
+    flex-direction: row;
+    background-color: #EAC100;
+    justify-content: space-around;
+    align-items: center;
+    border: none;
+}
+
+.wyslij{
+    width: 50px;
+}
+
+.przyciskior{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.tekstownikformularzowy{
+    width: 40%;
+}
+
+.formularzekform{
+    display: flex;
+    flex-direction: column;
+    background-color: #D9D9D9;
+    width: 80%;
+    height: 90%;
+    margin: 40px;
+}
+
+.sekcjonek{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 18%;
+}
+
+#innynwmczemu{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 18%;
+    height: 38%;
+}
+
+#imie{
+    width: 90%;
+    align-self: center;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+}
+
+.lableimie{
+    width: 90%;
+    align-self: center;
+    font-size: 25px;
+}
+
+#numer{
+    width: 90%;
+    align-self: center;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+}
+
+.numertel{
+    width: 90%;
+    align-self: center;
+    font-size: 25px;
+}
+
+#sms{
+    width: 90%;
+    height: 150px;
+    align-self: center;
+    border: none;
+    border-radius: 5px;
+}
+
+.labtext{
+    width: 90%;
+    align-self: center;
+    font-size: 25px;
+}
+
+table{
+    width: 90%;
+    height: 70%;
+    justify-self: center;
+    text-align: center;
+    border-spacing: 0px 5px;
+}
+
+tr:nth-child(even){
+    background-color: #EAC100;
+}
+
+tr{
+    background-color: #D9D9D9;
+}
+
+.planlekcji{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    height: 12%;
+    font-size: 35px;
+    font-weight: 300;
+    padding-left: 100px;
+}
+
+.tabeleczkadol{
+    display: flex;
+    background-color: #D9D9D9;
+    justify-self: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    height: 79px;
+}
+
+.ikonaskal{
+    width: 20px;
+}
+
+.ikonka{
+    display: flex;
+    flex-direction: row;
+}
+
+.dekoracjatekst{
+    text-decoration: underline;
+    color: #61DBFB;
+}
+
+.tabeleczkadolikony{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+}
